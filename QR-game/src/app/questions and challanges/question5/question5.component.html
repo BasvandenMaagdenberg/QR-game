@@ -1,0 +1,36 @@
+<body [ngClass]="backgroundStyle">
+  <div class="container">
+
+      <p>score: {{score}}</p>
+
+      <header>
+          <h1>QR-game</h1>
+          <h1 id="question">vraag: 5</h1>
+      </header>  
+
+      <main>
+          <div class="wrapper">
+              <img id="questionPicture" src="https://skvr.nl/sites/default/files/2022-02/VT_MU_piano_stock.jpg" alt="netflix">
+
+              <p>Hoeveel toetsen heeft een klassieke piano?</p>
+              <div class="choices">
+                  <div class="choice">
+                    <button  (click)="onClickMe1()" [disabled]="btnstate" class="btn btn-light">52</button>
+                  </div>
+                  <div class="choice">
+                    <button (click)="onClickMe2()" [disabled]="btnstate" class="btn btn-light">66</button>
+                  </div>
+                  <div class="choice">
+                    <button (click)="onClickMe3()" [ngClass]="btngreen" [disabled]="btnstate" class="btn btn-light">88</button>
+                  </div>
+              </div>
+          </div>
+      </main>
+  </div>
+
+  <footer>
+    <img id="curio" src="https://gebouw-t.nl/app/uploads/2019/10/curio-01-zwart-logo-rgb.png" alt="curio">
+  </footer>
+
+</body>
+

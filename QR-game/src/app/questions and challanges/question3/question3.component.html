@@ -1,0 +1,36 @@
+<body [ngClass]="backgroundStyle">
+  <div class="container">
+
+      <p>score: {{score}}</p>
+
+      <header>
+          <h1>QR-game</h1>
+          <h1 id="question">vraag: 3</h1>
+      </header>  
+
+      <main>
+          <div class="wrapper">
+              <img id="questionPicture" src="https://images2.minutemediacdn.com/image/fetch/w_2000,h_2000,c_fit/https%3A%2F%2Fnetflixlife.com%2Fwp-content%2Fuploads%2Fgetty-images%2F2016%2F04%2F98155502.jpeg" alt="netflix">
+
+              <p>Wanneer werd Netflix opgericht?</p>
+              <div class="choices">
+                  <div class="choice">
+                    <button  (click)="onClickMe1()" [ngClass]="btngreen" [disabled]="btnstate" class="btn btn-light">1997</button>
+                  </div>
+                  <div class="choice">
+                    <button (click)="onClickMe2()" [disabled]="btnstate" class="btn btn-light">2001</button>
+                  </div>
+                  <div class="choice">
+                    <button (click)="onClickMe3()" [disabled]="btnstate" class="btn btn-light">2009</button>
+                  </div>
+              </div>
+          </div>
+      </main>
+  </div>
+
+  <footer>
+    <img id="curio" src="https://gebouw-t.nl/app/uploads/2019/10/curio-01-zwart-logo-rgb.png" alt="curio">
+  </footer>
+
+</body>
+

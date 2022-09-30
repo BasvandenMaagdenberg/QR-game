@@ -1,0 +1,36 @@
+<body [ngClass]="backgroundStyle">
+  <div class="container">
+
+      <p>score: {{score}}</p>
+
+      <header>
+          <h1>QR-game</h1>
+          <h1 id="question">vraag: 4</h1>
+      </header>  
+
+      <main>
+          <div class="wrapper">
+              <img id="questionPicture" src="https://fortmyers.floridaweekly.com/wp-content/uploads/images/2019-06-19/1p1.jpg" alt="netflix">
+
+              <p>Wat gebeurde er op 20 juli 1969?</p>
+              <div class="choices">
+                  <div class="choice">
+                    <button  (click)="onClickMe1()" [ngClass]="btngreen" [disabled]="btnstate" class="btn btn-light">Apollo 11 landde op de maan</button>
+                  </div>
+                  <div class="choice">
+                    <button (click)="onClickMe2()" [disabled]="btnstate" class="btn btn-light">De Berlijnse muur viel</button>
+                  </div>
+                  <div class="choice">
+                    <button (click)="onClickMe3()" [disabled]="btnstate" class="btn btn-light">Het legendarische festival Woodstock werd gehouden</button>
+                  </div>
+              </div>
+          </div>
+      </main>
+  </div>
+
+  <footer>
+    <img id="curio" src="https://gebouw-t.nl/app/uploads/2019/10/curio-01-zwart-logo-rgb.png" alt="curio">
+  </footer>
+
+</body>
+

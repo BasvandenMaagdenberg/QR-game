@@ -1,0 +1,36 @@
+<body [ngClass]="backgroundStyle">
+  <div class="container">
+
+      <p>score: {{score}}</p>
+
+      <header>
+          <h1>QR-game</h1>
+          <h1 id="question">vraag: 4</h1>
+      </header>  
+
+      <main>
+          <div class="wrapper">
+              <img id="questionPicture" src="https://i.natgeofe.com/n/f0dc221a-778d-4bf3-91bf-3920ceba9ebc/090716-08-strange-lights-studio_big.jpg" alt="netflix">
+
+              <p>Wat was de naam van de man die als eerste een voet op de maan zette??</p>
+              <div class="choices">
+                  <div class="choice">
+                    <button  (click)="onClickMe1()" [disabled]="btnstate" class="btn btn-light">Elon Musk</button>
+                  </div>
+                  <div class="choice">
+                    <button (click)="onClickMe2()" [ngClass]="btngreen" [disabled]="btnstate" class="btn btn-light">Neil Armstrong</button>
+                  </div>
+                  <div class="choice">
+                    <button (click)="onClickMe3()" [disabled]="btnstate" class="btn btn-light">Buddy Vedder</button>
+                  </div>
+              </div>
+          </div>
+      </main>
+  </div>
+
+  <footer>
+    <img id="curio" src="https://gebouw-t.nl/app/uploads/2019/10/curio-01-zwart-logo-rgb.png" alt="curio">
+  </footer>
+
+</body>
+

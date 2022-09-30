@@ -1,0 +1,37 @@
+<body [ngClass]="backgroundStyle">
+  <div class="container">
+
+      <p>score: {{score}}</p>
+
+      <header>
+          <h1>QR-game</h1>
+          <h1 id="question">vraag: 2</h1>
+      </header>  
+
+      <main>
+          <div class="wrapper">
+            <img id="questionPicture" src="https://cdn.crash.net/styles/article/s3/image_importer/F1/2843332.0064.jpg?itok=XDhEQcrP" alt="f1car">
+
+            <p>Welke Duitse coureur heeft de meeste Formule 1-kampioenschappen gewonnen?</p>
+            <div class="choices">
+                  <div class="choice">
+                    <button  (click)="onClickMe1()" [disabled]="btnstate" class="btn btn-light">Max Verstappen</button>
+                  </div>
+                  <div class="choice">
+                    <button (click)="onClickMe2()" [disabled]="btnstate" class="btn btn-light">Lewis Hamilton</button>
+                  </div>
+                  <div class="choice">  
+                    <button (click)="onClickMe3()" [ngClass]="btngreen" [disabled]="btnstate" class="btn btn-light">Michael Schumacher</button>
+                  </div>
+              </div>
+          </div>
+      </main>
+  </div>
+
+  <footer>
+    <img id="curio" src="https://gebouw-t.nl/app/uploads/2019/10/curio-01-zwart-logo-rgb.png" alt="curio">
+  </footer>
+
+</body>
+
+

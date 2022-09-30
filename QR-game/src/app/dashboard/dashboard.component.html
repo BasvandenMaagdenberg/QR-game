@@ -1,0 +1,28 @@
+<body>
+  <div class="container">
+    <p>score: {{score}}</p>
+    <header>
+      <h1>QR-game</h1>
+    </header>
+  
+    <div class="wrapper">
+  
+      <main>
+        <div class="scanner">
+          <zxing-scanner (scanSuccess)="onCodeResult($event)" ></zxing-scanner>
+        </div>
+
+        <h2>
+          <small>Scan Result: </small>
+          <strong><a href="{{scanResult}}">
+            {{scanResult}}
+          </a></strong>
+        </h2>
+      </main>
+    </div>
+  
+  </div>
+    <footer>
+      <img src="https://gebouw-t.nl/app/uploads/2019/10/curio-01-zwart-logo-rgb.png" alt="curio">
+    </footer>
+</body>
