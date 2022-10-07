@@ -1,5 +1,7 @@
 # QRGame
 
+The website is made for first-year students who want to play an interactive game in the school on their first day. They can scan QR-codes that will be hanging around school and everytime they scan one it will show them a question they have to anwser. If they get it right they get points and get to scan another QR-code.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.3.
 
 ## Development server
